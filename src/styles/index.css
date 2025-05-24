@@ -9,3 +9,58 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.img-square {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-item {
+  color: #A9A9A9;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-item:hover {
+  color: white
+}
+
+.nav-link.active {
+    color: #FFF;
+}
+
+.card-image-fixed-height-container {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    border-top-left-radius: var(--bs-card-border-radius);
+    border-top-right-radius: var(--bs-card-border-radius);
+}
+
+.card-image-fixed-height-container .card-img-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-text-constrained {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body {
+    flex-grow: 1;
+}
